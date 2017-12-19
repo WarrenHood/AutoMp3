@@ -18,5 +18,4 @@
     </author>
  <preference name="orientation" value="portrait" />
   <icon src='icon.png' height='50' width='50'/>
-<plugin name="cordova-plugin-inappbrowser" />
 </widget>
