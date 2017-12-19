@@ -3,7 +3,7 @@
 <script>
 function init_search(){
 	list = document.getElementById("inp").value.split("\n");
-	for(var i=0; i<list.length;i++)window.open('http://tubidy.mobi/search.php?q='+list[i].split(" ").join("+"),"_system");
+	for(var i=0; i<list.length;i++)navigator.app.loadUrl('http://tubidy.mobi/search.php?q='+list[i].split(" ").join("+"), { openExternal:true });//window.open('http://tubidy.mobi/search.php?q='+list[i].split(" ").join("+"),"_system");
 }
 </script>
 <style>
