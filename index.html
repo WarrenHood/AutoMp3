@@ -1,0 +1,45 @@
+<html>
+<head>
+<script>
+function init_search(){
+	list = document.getElementById("inp").value.split("\n");
+	for(var i=0; i<list.length;i++)cordova.InAppBrowser.open('http://tubidy.mobi/search.php?q='+list[i].split(" ").join("+"),"_system");
+}
+</script>
+<style>
+body{
+	background:rgba(20,0,40,1);
+	color:orange;
+}
+h1{
+	color:white;
+	font-family:courier;
+	font-size:5vh;
+}
+button{
+	border-bottom:1px solid blue;
+	background:black;
+	color:green;
+	border-right:1px solid red;
+	border-bottom-right-radius:10%;
+	font-size:4vw;
+}
+textarea {
+	background:rgba(0,0,0,0.5);
+	width:70vw;
+	height:50vh;
+	border:1px solid orange;
+	border-radius:30px;
+	color:white;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>Auto Mp3 V1.0</h1>
+Paste a list of tracks into the input area below and touch the search button
+<textarea id="inp"></textarea><br><br>
+<button onclick="init_search();">Search</button>
+</center>
+</body>
+</html>

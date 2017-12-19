@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = ""
+        xmlns:gap   = ""
+        id          = "com.warren.automp3"
+        versionCode = "100" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>AutoMp3</name>
+
+    <description>
+        Mp3 List downloader
+    </description>
+
+    <author href="www.facebook.com/warren.hood.750" email="nullbyte001@gmail.com">
+        Warren Hood
+    </author>
+ <preference name="orientation" value="portrait" />
+  <icon src='icon.png' height='50' width='50'/>
+<plugin name="cordova-plugin-inappbrowser" />
+</widget>
