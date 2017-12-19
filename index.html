@@ -3,7 +3,7 @@
 <script>
 function init_search(){
 	list = document.getElementById("inp").value.split("\n");
-	for(var i=0; i<list.length;i++)cordova.InAppBrowser.open('http://tubidy.mobi/search.php?q='+list[i].split(" ").join("+"),"_system");
+	for(var i=0; i<list.length;i++)window.open('http://tubidy.mobi/search.php?q='+list[i].split(" ").join("+"),"_system");
 }
 </script>
 <style>
@@ -29,7 +29,6 @@ textarea {
 	width:70vw;
 	height:50vh;
 	border:1px solid orange;
-	border-radius:30px;
 	color:white;
 }
 </style>
