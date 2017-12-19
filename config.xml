@@ -18,8 +18,8 @@
     </author>
  <preference name="orientation" value="portrait" />
   <icon src='icon.png' height='50' width='50'/>
-  <gap:plugin name="org.apache.cordova.inappbrowser" />
+  <gap:plugin name="plugin.cordova.inappbrowser" />
 	<feature name="InAppBrowser">
-    <param name="android-package" value="org.apache.cordova.InAppBrowser" />
+    <param name="android-package" value="plugin.cordova.InAppBrowser" />
 </feature>
 </widget>
