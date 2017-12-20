@@ -1,10 +1,11 @@
 <html>
 <head>
+    <title>AutoMp3</title>
 <script>
 try{
 function init_search(){
 	list = document.getElementById("inp").value.split("\n");
-	for(var i=0; i<list.length;i++)window.open('http://tubidy.mobi/search.php?q='+list[i].split(" ").join("+"), "_system");//window.open('http://tubidy.mobi/search.php?q='+list[i].split(" ").join("+"),"_system");
+	for(var i=0; i<list.length;i++)window.open('http://tubidy.mobi/search.php?q='+list[i].split(" ").join("+"), "automp3_"+i);//window.open('http://tubidy.mobi/search.php?q='+list[i].split(" ").join("+"),"automp3_"+i);
 }
 }
 catch(e){
@@ -44,7 +45,7 @@ textarea {
 Paste a list of tracks into the input area below and touch the search button
 <textarea id="inp"></textarea><br><br>
 <button onclick="init_search();">Search</button><br>
-<a onclick="window.open('http://iphonedevlog.wordpress.com/phonegapcordova-crib-sheet/','_system');">DEBUG</a>
 </center>
 </body>
 </html>
+
